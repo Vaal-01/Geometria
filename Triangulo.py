@@ -34,6 +34,6 @@ class Triangulo:
             areaT=((self.p1.calcularDistancia(self.p2))*math.pow(3,1/3))/4
         else:
             perimetro=self.hallarPerimetro()/2
-            areaT=math.sqrt(perimetro*(perimetro-(self.p1.calcularDistancia(self.p2)))*(perimetro-(self.p2.calcularDistancia(self.p3)))*perimetro-(self.p3.calcularDistancia(self.p1)))
+            areaT=math.sqrt((perimetro)*(perimetro-(self.p1.calcularDistancia(self.p2)))*(perimetro-(self.p2.calcularDistancia(self.p3)))*((perimetro)-(self.p3.calcularDistancia(self.p1))))
         
         return areaT
