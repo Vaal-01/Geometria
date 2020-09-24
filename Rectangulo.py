@@ -7,10 +7,10 @@ class Rectangulo:
    self.p4=p4
 
   def hallarPerimetro(self):
-         perimetro=(self.p1.hallarDistancia(self.p2))+(self.p2.hallarDistancia(self.p4))+(self.p3.hallarDistancia(self.p1))+(self.p4.hallarDistancia(self.p3))
+         perimetro=(self.p1.calcularDistancia(self.p2))+(self.p2.calcularDistancia(self.p4))+(self.p3.calcularDistancia(self.p1))+(self.p4.calcularDistancia(self.p3))
          return perimetro
     
 
   def hallarArea(self):
-         area=(self.p1.hallarDistancia(self.p2))*(self.p2.hallarDistancia(self.p4))
+         area=(self.p1.calcularDistancia(self.p2))*(self.p2.calcularDistancia(self.p4))
          return area
