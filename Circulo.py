@@ -4,7 +4,7 @@ from Punto import Punto
 
 class Circulo():
 
-  def __init__(self,punto,radio):
+  def __init__(self,radio,punto):
    self.punto = punto
    self.radio = radio
 
@@ -20,7 +20,7 @@ class Circulo():
     
   def determinarDentro(self,otro):
 
-        if (self.punto.hallarDistancia(otro))<=self.radio:
+        if (self.punto.calcularDistancia(otro))<=self.radio:
             val=True
         else:
             val=False
